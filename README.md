@@ -1,28 +1,28 @@
 # AnagramApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
+This project was created using Angular 2. 
 
-## Development server
+# Instructions and Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Building and running the application
 
-## Code scaffolding
+Run the following commands:
+```
+git clone https://github.com/bhaskargogs/anagram-app
+cd anagram-app
+npm install
+ng-serve
+```
+ Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Functionalitites
 
-## Build
+The main goal of this application is to generate Anagrams for any string typed.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+`getAnagram(word)` produces an array of anagrams (`anagrams`), for the input `word`
 
-## Running unit tests
+`getRandom(array)` makes the items of the `array` shuffle. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`generateAnagram(word)` makes sure that the array `anagrams` is empty (by making it empty, if not) and generates anagrams randomly. It is done by calling the `getRandom` method on `getAnagram` method.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  
