@@ -13,17 +13,14 @@ tr:hover {
   background-color: #DDD;
   left: .1em;
 }
-.badge {
-  display: inline-block;
-  font-size: small;
+th {
+  background-color: #4CAF50;
   color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
+}
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid black;
 }

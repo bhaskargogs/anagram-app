@@ -8,13 +8,15 @@
   Type anything: <input [(ngModel)]="word" placeholder="word" (keyup)="getAnagrams(word)"/>
   <button (click)="getAnagrams(word)">Generate Anagram</button>
 </ul>
-<table>
-  <thead>
-  <th class="badge" (click)="sort()">Anagrams</th>
+<table *ngIf="anagrams">
+  <thead >
+  <th>Sl. No</th>
+  <th (click)="sort()">Anagrams</th>
   </thead>
   <tbody>
   <tr *ngFor="let anagram of anagrams | slice:0:10 ;let i = index">
-    <td><span>{{i+1}}</span> {{anagram}}</td>
+    <td>{{i+1}}</td>
+    <td> {{anagram}}</td>
   </tr>
   </tbody>
 </table>
