@@ -4,6 +4,10 @@ This project was created using Angular 2.
 
 # Instructions and Description
 
+## Requirements
+
+Install [NodeJS](https://nodejs.org/en/) to get the npm package manager 
+
 ## Building and running the application
 
 Run the following commands:
