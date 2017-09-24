@@ -10,12 +10,10 @@
 </ul>
 <table *ngIf="anagrams">
   <thead >
-  <th>Sl. No</th>
   <th (click)="sort()">Anagrams</th>
   </thead>
   <tbody>
-  <tr *ngFor="let anagram of anagrams | slice:0:10 ;let i = index">
-    <td>{{i+1}}</td>
+  <tr *ngFor="let anagram of anagrams | slice:0:10">
     <td> {{anagram}}</td>
   </tr>
   </tbody>
