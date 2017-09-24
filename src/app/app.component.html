@@ -5,8 +5,8 @@
   </h1>
 </div>
 <ul>
-  Type anything: <input [(ngModel)]="word" placeholder="word" (keyup)="generateAnagram(word)"/>
-  <button (click)="generateAnagram(word)">Generate Anagram</button>
+  Type anything: <input [(ngModel)]="word" placeholder="word" (keyup)="getAnagrams(word)"/>
+  <button (click)="getAnagrams(word)">Generate Anagram</button>
 </ul>
 <table>
   <thead>

@@ -17,12 +17,18 @@ ng-serve
 
 ## Functionalitites
 
-The main goal of this application is to generate Anagrams for any string typed.
+The main goal of this application is to generate Anagrams for any string typed through Service and Controller components.
 
-`getAnagram(word)` produces an array of anagrams (`anagrams`), for the input `word`
+### Service
 
-`getRandom(array)` makes the items of the `array` shuffle. 
+I created a Service `AnagramService` that holds the logic behind generating Anagrams randomly while returning a Promise of an array out of any word string given as input.
 
-`generateAnagram(word)` makes sure that the array `anagrams` is empty (by making it empty, if not) and generates anagrams randomly. It is done by calling the `getRandom` method on `getAnagram` method.
+The logic behind generating Anagrams out of words is done through `generateAnagram(word)` function which returns an array.
 
-  
+This array is then shuffled through `getRandom(array)` function which is triggered in each click function.
+
+### Controller
+
+In the Controller component, I have injected the `AnagramService` and used `getAnagram(word)` to get the Promise returned by Service to display the anagrams
+
+<i>Note:</i> Comments are also given on the code
