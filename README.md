@@ -15,7 +15,7 @@ Run the following commands:
 git clone https://github.com/bhaskargogs/anagram-app
 cd anagram-app
 npm install
-ng-serve
+npm start
 ```
  Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
