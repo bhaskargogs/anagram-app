@@ -19,6 +19,10 @@ ng-serve
 ```
  Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Sorting
+
+You can click on the `Anagrams` tab to sort in either ascending/descending order.
+
 ## Functionalitites
 
 The main goal of this application is to generate Anagrams for any string typed through Service and Controller components.
