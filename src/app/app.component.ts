@@ -9,8 +9,7 @@ import {AnagramService} from './anagram.service';
 })
 export class AppComponent implements OnInit {
   title = 'app';
-  word: String;
-  anagrams: String[];
+  anagrams = [];
   isDesc: boolean;
 
   constructor(private anagramService: AnagramService) {
@@ -39,10 +38,7 @@ export class AppComponent implements OnInit {
   *generateAnagram(String) function is used to generate anagrams randomly from a word string
   * */
   getAnagrams(word): void {
-    if (this.anagrams !== []) {
-      this.anagrams = [];
-    }
-    this.anagramService.getAnagram(this.word).then(anagrams => this.anagrams = anagrams);
+    this.anagramService.getAnagram(word).then(anagrams => this.anagrams = anagrams);
   }
 
 }
